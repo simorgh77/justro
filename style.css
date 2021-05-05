@@ -1,0 +1,242 @@
+@font-face {
+    font-family: shabnam;
+    src: url("./assetes/fonts/Shabnam.woff");
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
+    
+}
+
+*{
+    box-sizing: border-box;
+    font-family: shabnam;
+  
+}
+
+.header{
+    min-height: 3rem;
+}
+
+.main{
+    min-height: 24rem;
+ 
+}
+
+.footer{
+
+    min-height: 10rem;
+  
+}
+.header-right{
+min-height: 13rem;
+    background-image: url("./assetes/img/009_logo_Bg.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    justify-content: end;
+     
+}
+
+.download-button{
+
+    background-color: #ef6a41;
+    color: white;
+}
+
+.row-main{
+    height: 1rem;
+}
+.footer-wave { 
+    height: 5%;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+  }
+.wave {
+        background: url("./assetes/img/011_bg_wave.svg") repeat-x; 
+        position: absolute;
+        top: -198px;
+        width: 100rem;
+        height: 198px;
+        
+        animation: wave 15s infinite linear;
+        transform: translate3d(0, 0, 0);
+        overflow-x: hidden;
+      }
+      @keyframes wave {
+        0% {
+          margin-left: 0;
+        }
+        100% {
+          margin-left: -1600px;
+        }
+      }
+  .slide-2{
+    min-height: 30rem;
+  
+}
+.pics-slide-2 img{
+    width: 3rem;
+    border: 1px solid rgb(78, 151, 185);
+    border-radius: 50%;
+    padding: .5rem;
+
+    }
+    .line{
+        -webkit-clip-path: inset(0 46% 0 52%);
+clip-path: inset(0 46% 0 52%);
+        position: absolute;
+        margin-left: -10px;
+        height: 45rem;
+        background-color:#00f5bb;
+    }
+
+    .slide-3{
+
+        min-height: 30rem;
+        
+    }
+  
+    .icons img{
+        width: 1rem;
+    }
+    .icons{
+        font-size: .9rem;
+        height: 2rem;
+    }
+
+    .footer-slide-3{
+        background-image: url("./assetes/img/022_bg_amadegisafar.svg");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 20rem;
+        background-size: 100%;
+        min-height: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    .shadow-div{
+        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.44)
+    }
+    .slide-4{
+        min-height: 30rem;
+    }
+    .crousel img{
+        width: 30rem;
+        transform: translateX(100%);
+    }
+
+.slider{
+    overflow-x: scroll;
+}
+.last-footer{
+    background-image: url("./assetes/img/025_footer_Bg.svg");
+    background-size: cover;
+    width: 100%;
+    height:25vh;
+    background-repeat: no-repeat;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.right-last-footer{
+    background-image: url("./assetes/img/026_footer_c.right_bg.svg");
+    background-repeat: no-repeat;
+    margin-top: auto;
+}
+
+
+@media (max-width: 768px) { 
+    .navbar{
+        display: flex;
+     width: 100%;
+     background-color: rgb(215, 219, 219);
+     
+    }
+    .header-right{
+       transform: translateX(55px);
+height: 20rem;
+height: 10%;
+    }
+    .footer{
+        transform: scale(2);
+        margin-top: 145px;
+    }
+    body, html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .slide-3{
+        margin: 0;
+    }
+    .shadow-div{
+        margin: 0 ;
+        min-height: 20rem;
+        padding: 0;
+    }
+    .footer-slide-3{
+        background-image: url("./assetes/img/023_amadegisafar.jpg");
+background-size: cover;
+    }
+    .crousel img{
+        transform: translateX(0);
+    }
+    .footer{
+
+        height: 2rem;
+    }
+    .svg-phone{
+        height: 600px;
+    }
+    .last-footer{
+        background-image: url("./assetes/img/025_footer_Bg.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+       height: 20vh;
+       margin-top: 50px;
+       padding: 0;
+       background-color: #005842;
+       width: 100%;
+    }
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .logo >img{
+
+        width: 1rem;
+        height: 1rem;
+        padding: 0;
+        margin: 0;
+
+    }
+    .right-last-footer{
+        background-image: none;
+    }
+    
+  .d{
+      font-size: 5px;
+      order: 1;
+      
+  }
+ }
+
+
+ /* --------------------------------------slide2----------- */
+
+
+/* // Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
